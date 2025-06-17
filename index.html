@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Flow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="screen active" id="login">
+      <div class="header">9:41</div>
+      <h2>Welcome Back</h2>
+      <input type="text" placeholder="Email/Phone Number" class="input-field">
+      <input type="password" placeholder="Password" class="input-field">
+      <button class="login-btn">Login</button>
+      <a href="#" class="forgot-password">Forgot Password</a>
+      <button class="social-btn">Sign in with Google</button>
+      <button class="social-btn">Sign in with Apple</button>
+    </div>
+
+    <div class="screen" id="dashboard">
+      <div class="header">9:41</div>
+      <h2>Hi, Group H8</h2>
+      <div class="balance-card">Current Balance<br>LE 404,000,000</div>
+      <div class="action-buttons">
+        <button class="action-btn">Send Money</button>
+        <button class="action-btn">Request</button>
+        <button class="action-btn">Top up</button>
+        <button class="action-btn">Withdraw</button>
+      </div>
+      <div class="recent-activity">
+        <h3>Recent Activity</h3>
+        <p>Osman Sheriff: LE 202,000,000</p>
+        <p>Henry Bangura: LE 121,200,000</p>
+        <p>Philip Kpanda: LE 80,600,000</p>
+        <p>Isatu Bah: LE 20,200,000</p>
+      </div>
+    </div>
+
+    <div class="screen" id="send-money">
+      <div class="header">9:41</div>
+      <div class="nav-bar">
+        <span class="back-btn">&larr;</span>
+        <span class="card-icon">&#9632;</span>
+      </div>
+      <input type="text" placeholder="Enter recipient name/number" class="input-field">
+      <div class="recipient-field">Osman Sheriff</div>
+      <div class="amount-field">LE 202,000,000</div>
+      <input type="text" placeholder="Note (optional)" class="input-field">
+      <div class="confirmation">
+        <p>Recipient: Osman Sheriff</p>
+        <p>Amount: LE 202,000,000</p>
+        <button class="confirm-btn">Confirm</button>
+      </div>
+      <div class="action-buttons">
+        <button class="action-btn">Confirm</button>
+        <button class="action-btn">Cancel</button>
+      </div>
+    </div>
+
+    <div class="screen" id="transaction-history">
+      <div class="header">9:41</div>
+      <h2>Transaction History</h2>
+      <div class="filter-bar">Date - Time - Sent - Received</div>
+      <ul class="transaction-list">
+        <li><span>&rarr;</span> Osman Sheriff: -LE 202,000,000 <span>18/06/2025</span></li>
+        <li><span>&larr;</span> Henry Bangura: -LE 121,200,000 <span>18/06/2025</span></li>
+        <li><span>&rarr;</span> Philip Kpanda: -LE 60,000,000 <span>18/06/2025</span></li>
+        <li><span>&larr;</span> Isatu Bah: -LE 20,200,000 <span>18/06/2025</span></li>
+        <li><span>&uarr;</span> Selwyn LTD Company: +LE 404,000,000 <span>10/06/2025</span></li>
+      </ul>
+      <div class="nav-bar">
+        <span class="nav-icon">&#8962;</span>
+        <span class="nav-icon">&#128270;</span>
+        <span class="nav-icon">&#128235;</span>
+        <span class="nav-icon">&#128100;</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
